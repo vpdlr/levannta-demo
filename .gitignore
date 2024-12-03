@@ -1,0 +1,30 @@
+
+### `.gitignore`
+
+```bash
+# Python
+*.pyc
+*.pyo
+__pycache__/
+
+# Virtual environment
+venv/
+ENV/
+env/
+.venv/
+
+# Django
+*.log
+*.sqlite3
+db.sqlite3
+*.pot
+*.pyc
+
+# IDEs
+.vscode/
+.idea/
+
+# Misc
+*.bak
+*.swp
+*.swo
