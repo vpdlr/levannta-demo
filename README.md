@@ -14,7 +14,7 @@ This is a demo project for Levannta, built with Django and DRF. The project simu
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/levannta_demo.git
+git clone https://github.com/vpdlr/levannta-demo.git
 cd levannta_demo
 ```
 
@@ -40,18 +40,18 @@ python manage.py runserver
 ```
 The application will now be running at http://127.0.0.1:8000.
 
-## Endpoints
+## Endpoints
 
-### POST /api/advances/portfolio
+### POST /api/advances/portfolio
 Uploads a client portfolio and calculates the maximum advance.
 
-### POST /api/advances/apply-loan
+### POST /api/advances/apply-loan
 Submits a loan request based on the portfolio data.
 
-### GET /api/advances/loan-status
+### GET /api/advances/loan-status
 Checks the status of the loan application.
 
 ## Technologies Used
-Django 5.1
-Django REST Framework (DRF)
+- Django 5.1
+- Django REST Framework (DRF)
 
