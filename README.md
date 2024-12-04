@@ -119,7 +119,7 @@ curl -X POST http://127.0.0.1:8000/api/advances/portfolio/ \
 }
 ```
 
-### Example 2: Apply for a loan
+### Example 2: Apply for a loan
 
 ```bash
 curl -X POST http://127.0.0.1:8000/api/advances/apply-loan/ \
@@ -153,7 +153,7 @@ curl -X POST http://127.0.0.1:8000/api/advances/apply-loan/ \
 }
 ```
 
-### Example 3: Get loan status
+### Example 3: Get loan status
 
 ```bash
 curl -X GET http://127.0.0.1:8000/api/advances/loan-status/10/
