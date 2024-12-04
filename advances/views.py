@@ -3,7 +3,6 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from .services.portfolio_service import process_and_calculate_max_advance
 from .services.loan_service import process_loan_application, get_loan_status
-from .utils.csv_utils import parse_csv
 from .serializers import PortfolioFileSerializer
 
 # POST /portfolio - Receives the portfolio data (CSV format) and returns max advance
