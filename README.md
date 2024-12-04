@@ -56,21 +56,21 @@ Uploads a client portfolio and calculates the maximum advance.
 Submits a loan request based on the portfolio data.
 
 #### Request Parameters
-- loan_amount: The amount requested for the loan.
-- portfolio_id: The ID of the portfolio associated with the loan.
+- **loan_amount:** The amount requested for the loan.
+- **portfolio_id:** The ID of the portfolio associated with the loan.
 #### Response
-- loan_id: The unique identifier for the loan.
-- state: The status of the loan (APPROVED/REJECTED).
-- payment_schedule: The repayment schedule for the loan.
+- **loan_id:** The unique identifier for the loan.
+- **state:** The status of the loan (APPROVED/REJECTED).
+- **payment_schedule:** The repayment schedule for the loan.
 
 
 ### GET /api/advances/loan-status/{loan_id}/
 Checks the status of the loan application.
 
 #### Response
-- loan_id: The ID of the loan.
-- state: The status of the loan.
-- amount: The requested loan amount.
+- **loan_id:** The ID of the loan.
+- **state:** The status of the loan.
+- **amount:** The requested loan amount.
 
 ## Technologies Used
 - Django 5.1
@@ -79,7 +79,6 @@ Checks the status of the loan application.
 
 ## Assumptions
 
-- This project assumes there will be only **one company** sending their portfolio data for processing. The system does not support multiple users (i.e., different companies) at this stage.
 - Identifiers are used to support the management of multiple portfolios (companies) at the same time: Each portfolio submission returns a unique portfolio_id, loan applications require the associated portfolio_id and return a unique loan_id, the loan_id is used to fetch the loan status.
 - The portfolio data should be provided in **CSV** format with the required headers.
 - The repayment schedule is calculated using a factor rate of 1.2x the loan amount. The repayment period is fixed at 12 months.
@@ -145,7 +144,6 @@ curl -X POST http://127.0.0.1:8000/api/advances/apply-loan/ \
                 "month": 2,
                 "amount_due": "10000.0"
             },
-            ...
             {
                 "month": 12,
                 "amount_due": "10000.0"
